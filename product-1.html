@@ -2,13 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Apple TV</title>
+  <title>OnlineShop - Apple TV</title>
 </head>
 <body>
-  <main>
-    <div>
-        
+  <header>
+    <a href="index.html"><img src="assets/img/logo.svg" alt="logo" sizes="80%"></a>
+    <nav align="right" text-color="black">
+      <a href="index.html">Accueil</a> &nbsp; &nbsp;
+      <a href="products.html">Produits</a>&nbsp; &nbsp;
+      <a href="contact.html">Contact</a>&nbsp; &nbsp;
+      <a href="shopping-cart.html">Panier</a>
+    </nav>
+    <hr>
+  </header>
+  <div class="product-detail">
+    <div class="img">
+      <img src="assets/img/apple-tv.png" alt="apple-tv">
     </div>
-  </main>
+    <div class="info">
+      <h1 class="name">Apple TV</h1>
+      <div class="price">$249.99</div>
+      <div class="category">Computers</div>
+      <br>
+      <div class="description">L'Apple TV est un appareil conçu par Apple qui permet la communication sans fil entre un ordinateur et un téléviseur. Il est disponible depuis fin mars 2007 dans sa première version.L'appareil ressemble alors par sa forme à un Mac mini, bien qu'il ne fasse que la moitié de sa hauteur. Il communique par réseau sans fil ou Ethernet, avec un appareil iOS ou avec un ordinateur (sous Mac OS X ou sous Windows) par le biais du logiciel iTunes, permettant ainsi de diffuser le contenu vidéo et audio sur le téléviseur, via éventuellement un amplificateur audio-vidéo. (<a href='https://fr.wikipedia.org/wiki/Apple_TV' target='_blank'>Wikipédia</a>)",</div>
+      <br>
+      <div class="features">
+        <p>Features:</p>
+        <ul>
+          <li>Processeur Apple A8</li>
+          <li>Mémoire vide de 2Go</li>
+          <li>Stockage de 32 ou 64 Go en mémoire flash</li>
+          <li>Connectivités: USB Type-C, HDMI, récepteur infrarouge</li>
+          <li>Réseau: Wi-Fi (802.11a/b/g/n/ac), 10/100 Ethernet, Bluetooth, AirPlay</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="quantity">
+    Quantité:
+    <input type="number" value="1" min="1"><a href="#" class="btn-add2cart">Ajouter au Panier</a>
+  </div>
 </body>
 </html>
