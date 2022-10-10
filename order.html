@@ -5,6 +5,43 @@
   <title>OnlineShop - Commande</title>
 </head>
 <body>
-<!-- TODO -->
+  <header>
+    <a href="index.html"><img src="assets/img/logo.svg" alt="logo" sizes="80%"></a>
+    <nav align="right" text-color="black">
+      <a href="index.html">Accueil</a> &nbsp; &nbsp;
+      <a href="products.html">Produits</a>&nbsp; &nbsp;
+      <a href="contact.html">Contact</a>&nbsp; &nbsp;
+      <a href="shopping-cart.html">Panier</a>
+    </nav>
+    <hr>
+  </header>
+  <div class="payment-info">
+    <h1>Veuillez compléter votre information:</h1>
+    <form>
+      <INPUT name="prénom" type="text" size="25" maxlength="40" placeholder="Prénom" id="firstname" required></INPUT> <br>
+      <INPUT name="nom" type="text" size="25" maxlength="40" placeholder="Nom" id="lastname" required></INPUT> <br>
+      <INPUT name="useremail" type="email" placeholder="Addresse courriel" id="email" required></INPUT> <br>
+      <INPUT name="numtel" type="tel" placeholder="Numéro de téléphone" id="phone" required></INPUT> <br> <br> 
+      
+    <h1>Entrez l'information de votre carte :</h1>
+      <input type="text" placeholder="Numéro de carte de crédit ou de débit" id="creditcard" required> <br>
+      <input type="text" placeholder="date d'expiration (MM/AA)" id="creditcardexpiry" required> <br>
+      <input type="text" placeholder="CVV" id="cvv" required> <br> <br>
+      
+      <a href="confirmation.html"><input type="submit" value="Payer"></a>
+    </form>
+  </div>
+  <br>
+  <br>
+  <footer>
+    <hr>
+    <h1>
+      © Vincent HOANG
+    </h1>
+    <p>
+      Matricule: 20183549
+    </p>
+
+  </footer>
 </body>
 </html>
