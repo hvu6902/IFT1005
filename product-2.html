@@ -2,18 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>OnlineShop - Canon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlineShop - Accueil</title>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="assets/img/logo.svg" alt="logo" sizes="80%"></a>
-    <nav align="right" text-color="black">
-      <a href="index.html">Accueil</a> &nbsp; &nbsp;
-      <a href="products.html">Produits</a>&nbsp; &nbsp;
-      <a href="contact.html">Contact</a>&nbsp; &nbsp;
-      <a href="shopping-cart.html">Panier</a>
+    <a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li> 
+        <li><a href="products.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-shopping-cart fa-stack-1x"></i>
+        </span>
+        <span class="count">3</span>
+        </a></li>
+      </ul>
     </nav>
-    <hr>
   </header>
   <div class="product-detail">
     <div class="img">
