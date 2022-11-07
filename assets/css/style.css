@@ -142,37 +142,7 @@ article{
     height: 200px;
     width: 100%;
 }
-.product-1{
-    width: 300px;
-    padding: 10px;
-    border: solid 1px #999999;
-    border-radius: 4px;
-}
-.product-2{
-    width: 300px;
-    padding: 10px;
-    border: solid 1px #999999;
-    border-radius: 4px;
-}
-.product-3{
-    width: 300px;
-    padding: 10px;
-    border: solid 1px #999999;
-    border-radius: 4px;
-}
-.product-4{
-    width: 300px;
-    padding: 10px;
-    border: solid 1px #999999;
-    border-radius: 4px;
-}
-.product-5{
-    width: 300px;
-    padding: 10px;
-    border: solid 1px #999999;
-    border-radius: 4px;
-}
-.product-6{
+.product{
     width: 300px;
     padding: 10px;
     border: solid 1px #999999;
@@ -204,7 +174,8 @@ form{
 .form-control{
     border: 1px solid #999999;
     border-radius: 4px;
-    width: 10%;
+    width: 15%;
+    height: 15%;
     text-align: center;
 }
 form button{
@@ -217,8 +188,33 @@ form button:hover{
     background-color: #1fb5e9;
     text-decoration: none;
     transition: 0.2s;
+    cursor: pointer;
 }
 .price{
     padding-top: 20px;
 }
+.contact p{
+    padding-top: 15px;
+}
+.contact-wrap{
+    margin-top: 30px;
+    margin-left: 8rem;
+    border: 1px #999999 solid;
+    border-radius: 4px;
+    display: table;
+    width: 100%;
+}
+.col{
+    display: table-cell;
+    padding: 3rem;
+    width: 33%;
+}
+/* .col:first-child i{
+    height: 1000px;
+    width: 1000px;
 
+} */
+.col:nth-child(odd) a{
+    margin-top: 15px;
+    color: #14597f;
+}
