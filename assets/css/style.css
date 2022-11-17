@@ -12,6 +12,12 @@ body{
     width: 100%;
     display: table;
 }
+main{
+    max-width: 1200px;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: -50px;
+}
 header{
     height: 60px;
     background-color: #14597f;
@@ -56,25 +62,22 @@ nav a:active{
     border-radius: 50%;
     
 }
-main{
+.home-page{
     padding: 20px;
     display: flex;
-    height: 100%;
+    width: 100%;
 }
-main img{
+.home-page img{
     float: right;
-    width: 40%;
+    width: 30%;
     margin: 0;
 }
-.footer{
+.footer, .push{
     height: 70px;
     text-align: center;
     background-color: #eeeeee;
     box-sizing: border-box;
-    border-top: 1px #cccccc solid;
-    width: 100%;
-    bottom: 0;
-    padding: 1rem;
+    border-top: 1px #cccccc solid; 
     
 }
 .btn {
@@ -84,11 +87,12 @@ main img{
     padding: 10px 10px;
 }
 .btn:hover{
+    cursor: pointer;
     background-color: #1fb5e9;
     text-decoration: none;
     transition: 0.2s;
 }
-main{
+.products-page{
     display: flex;
     position: relative;
 }
@@ -114,18 +118,19 @@ main{
 .sidebar button::selection{
     background-color: #ddf2fb;
 }
-main .sidebar h2{
+.products-page .sidebar h2{
     color: #000000;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 h2{
     color: #000000;
 }
-article{
+.products{
     position: flex;
     width: 75%;
     padding: 50px 0;
+    
 }
 #products-list{
     display: grid;
@@ -141,6 +146,14 @@ article{
 #products-list img{
     height: 200px;
     width: 100%;
+}
+.product-page{
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+.product-page h2{
+    margin-top: 50px;
 }
 .product{
     width: 300px;
@@ -165,26 +178,26 @@ article{
 .right-column li{
     margin-left: 30px;
 }
-form{
+.product-form{
     margin: 10px;
     padding: 10px;
     width: 50%;
     float: right;
 }
-.form-control{
+#product-quantity{
     border: 1px solid #999999;
     border-radius: 4px;
     width: 15%;
     height: 15%;
     text-align: center;
 }
-form button{
+.form-control{
     background-color: #14597f;
     border: solid 1px;
     border-radius: 4px;
     padding: 10px 16px;
 }
-form button:hover{
+.form-control:hover{
     background-color: #1fb5e9;
     text-decoration: none;
     transition: 0.2s;
@@ -196,9 +209,16 @@ form button:hover{
 .contact p{
     padding-top: 15px;
 }
+.contact i{
+    margin-left: 50px;
+    font-size: 48px;
+}
+.contact{
+    padding: 20px;
+}
 .contact-wrap{
-    margin-top: 30px;
-    margin-left: 8rem;
+    margin-top: 20px;
+    margin-left: 30px;
     border: 1px #999999 solid;
     border-radius: 4px;
     display: table;
@@ -209,12 +229,104 @@ form button:hover{
     padding: 3rem;
     width: 33%;
 }
-/* .col:first-child i{
-    height: 1000px;
-    width: 1000px;
-
-} */
 .col:nth-child(odd) a{
     margin-top: 15px;
     color: #14597f;
+}
+.checkout-wrapper{
+    position: flex;
+    width: 100%;
+    padding: 50px 0;
+}
+.checkout-wrapper table, th{
+    border-bottom: solid 1px #000000;
+}
+.checkout-wrapper a{
+    color: #14597f;
+    padding-left: 10px;
+}
+.checkout-table{
+    padding-top: 30px;
+}
+.checkout-table th:first-child{
+    max-width: 30px;
+}
+.checkout-table button{
+    width: 30px;
+    background-color: #dddddd;
+    border-radius: 3px;
+}
+.checkout-table button:hover{
+    background-color: #bbbbbb;
+}
+.checkout-table th:nth-child(2){
+    width: 40%;
+    text-align: left;
+    padding-left: 20px;
+}
+.checkout-table th:nth-child(3){
+    width: 20%;
+}
+.checkout-table tbody td:nth-child(3){
+    flex: 1;
+    text-align: center;
+}
+.checkout-table th:nth-child(4){
+    width: 20%;
+}
+.checkout-table tbody td:nth-child(4){
+    flex: 1;
+    text-align: center;
+}
+.checkout-table tbody td:nth-child(5){
+    flex: 1;
+    text-align: right;
+}
+.checkout-table th:nth-child(5){
+    width: 30%;
+}
+.checkout-table tbody{
+    padding: 50px;
+}
+.checkout-wrapper p{
+    text-align: right;
+    padding: 20px;
+}
+.order-button{
+    float: right;
+}
+.order{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+}
+.order span{
+    font-weight: bold;
+}
+.order form .details{
+    display: table;
+}
+.order form input{
+    width: 550px;
+    height: 25px;
+    border: solid 1px #999999;
+    border-radius: 4px;
+}
+.input-box-left{
+    display: table-cell;
+    width: 50%;
+    padding: 10px 50px;
+}
+.input-box-right{
+    display: table-cell;
+    width: 50%;
+}
+.order .btn{
+    float: right;
+}
+.confirmation{
+    padding: 20px;
+}
+.confirmation h1{
+    margin-bottom: 20px;
 }
